@@ -328,7 +328,7 @@ function drawReticule(animation){
         
         ctx1.font = "20px Arial";
         
-        ctx1.fillText(nextList[i].toString(),x+5,y+12);
+        ctx1.fillText(nextList[i].toString(),x+5,y+17);
         
         ctx1.font = "25px Arial";
         
@@ -372,7 +372,7 @@ function drawReticule(animation){
     
     ctx1.font = "20px Arial";
         
-    ctx1.fillText(nextList[i].toString(),x+5,y+12);
+    ctx1.fillText(nextList[i].toString(),x+5,y+17);
         
     ctx1.font = "25px Arial";
         
@@ -1030,6 +1030,7 @@ document.onkeydown = function(e) {
     }
 }
 
+draw(500,500, true)
 
 // load saved data
 var waypointsString = getParameterByName('waypoints')
