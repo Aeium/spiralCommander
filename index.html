@@ -10,9 +10,9 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 
 </div>
 
-<p>This page is a mouse toy, and also a 4d graph of 1 million+ possible inputs. A description of how it was created should be <a href="https://aeium.github.io/blog/">here</a> soon.</p>
+<p>Spiral commmander allows you to set waypoints on the map image to the right for the spiral to visit.</p>
 
-<p>If you move the mouse around the left section of the window, it will generate a pattern using the mouse co-ordinates. The right section of the window is a visualization of roughly 1 million starting co-ordinates, graphed by image complexity (estimated by PNG file size). It's possible to explore the graph by clicking on it or using the arrow keys.</p>
+<p> The map is a visualization of roughly 1 million starting co-ordinates, graphed by image complexity (estimated by PNG file size). Press any number key then click with the mouse on the map (the image to the right) to set a waypoint there. You can select any waypoint with the corresponding number key. When selected (show by the square), waypoints can be replaced with a click, adjusted with the arrow keys, or deleted with backspace. The animation to the left will interpolate the path between the waypoints in sequence.</p>
 
 <a href="https://twitter.com/Aeium?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Aeium</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -22,7 +22,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 
 <button style="background-image:url('https://raw.githubusercontent.com/Aeium/spiralToy/master/save_to_url.png'); width:108px;height:20px;  border: none; padding: 0;" onclick="saveState()" /button>
 
-<img id="map" src="https://raw.githubusercontent.com/Aeium/spiralToy/master/map1.png" hidden>
+<img id="map" src="https://raw.githubusercontent.com/Aeium/spiralCommander/master/map1.jpg" hidden>
 
 <script>
 /*
@@ -90,7 +90,7 @@ var phi  = 0  // these are so I can write the rho and theta on the right side of
 
 var selectedNumber = 1  // which waypoint is selected
 
-var duration = 8000 // global for animation duration
+var duration = 16000 // global for animation duration
 
 var startTime = 0
 
